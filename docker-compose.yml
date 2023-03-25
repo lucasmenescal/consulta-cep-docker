@@ -3,10 +3,10 @@ version: '3'
 
 services:
   back:
-    build: ./calcula-frete-api
-    container_name: api-rest
+    build: ./calcula-frete-infra
+    container_name: calcula-frete
     volumes:
-      - ./calcula-frete-api/projeto/:/workspace
+      - ./calcula-frete-infra/projeto/:/workspace
     restart: always
     ports:
       - "8080:8080"

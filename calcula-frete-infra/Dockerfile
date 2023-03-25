@@ -18,15 +18,15 @@ RUN dpkg-reconfigure -f noninteractive tzdata
 WORKDIR /spring-cli
 RUN wget https://repo.spring.io/release/org/springframework/boot/spring-boot-cli/2.6.3/spring-boot-cli-2.6.3-bin.zip
 RUN unzip spring-boot-cli-2.6.3-bin.zip -d spring-boot-cli
-RUN export PATH=$PATH:/spring-cli/spring-boot-cli/spring-2.6.3/bin
+ENV PATH=$PATH:/spring-cli/spring-boot-cli/spring-2.6.3/bin
 
 # Define o diretório de trabalho
 WORKDIR /workspace
 
 # Para Criar a API REST(Projeto inicial)
-RUN spring init --dependencies=web,actuator --language=java --boot-version=2.5.0 --java-version=11 consulta-endereco --build mvn
-RUN cd consulta-endereco
-RUN mvn compile
+# RUN spring init --dependencies=web,actuator --language=java --boot-version=2.5.0 --java-version=11 consulta-endereco --build mvn
+# WORKDIR /workspace/consulta-endereco
+# RUN mvn compile
 
 
 

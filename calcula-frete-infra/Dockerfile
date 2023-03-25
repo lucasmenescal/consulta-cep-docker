@@ -23,10 +23,10 @@ ENV PATH=$PATH:/spring-cli/spring-boot-cli/spring-2.6.3/bin
 # Define o diretório de trabalho
 WORKDIR /workspace
 
-# Para Criar a API REST(Projeto inicial)
-# RUN spring init --dependencies=web,actuator --language=java --boot-version=2.5.0 --java-version=11 consulta-endereco --build mvn
-# WORKDIR /workspace/consulta-endereco
-# RUN mvn compile
+WORKDIR /workspace/consulta-endereco
+
+# Executa o projeto
+CMD ["mvn", "spring-boot:run"]
 
 
 

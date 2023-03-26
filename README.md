@@ -15,6 +15,8 @@
 
 ### Requisitos
 > Ter o docker e o docker-compose instalados na maquina.
+> Ter o vscode instalado
+> Ter a extensao Dev container instalado no vscode
 
 ### Observações importantes
 1. Para conseguir rodar os testes Junit5, Cucumber é necessário comentar a linha `command: mvn spring-boot:run` do docker-compose e descomentar `command: /bin/bash`

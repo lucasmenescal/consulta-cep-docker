@@ -7,9 +7,10 @@ services:
     container_name: calcula-frete
     volumes:
       - ./calcula-frete-infra/projeto/:/workspace
-    restart: always
     ports:
       - "8080:8080"
     stdin_open: true   
+    # command: mvn spring-boot:run
+    # command: mvn test
     command: /bin/bash
 

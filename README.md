@@ -7,6 +7,20 @@
 
 3. Abra um terminal de comando dentro da pasta **consulta-cep-infra** e digite
 `docker-compose up -d`
+4. Aguarde finalizar e aguarde o mvn rodar as instalações necessárias e iniciar a API.
+
 
 [Link da API](https://github.com/lucasmenescal/consulta-endereco)
 
+
+### Requisitos
+> Ter o docker e o docker-compose instalados na maquina.
+
+### Observações importantes
+1. Para conseguir rodar os testes Junit5, Cucumber é necessário comentar a linha `command: mvn spring-boot:run` do docker-compose e descomentar `command: /bin/bash`
+2. Em seguida, deverá abrir um vscode dentro do container, com a extensao Dev containers.
+3. Abrir um terminal dentro do container e digitar `mvn test`
+
+### Para acessar a Documentação Swagger
+1. Quando a API estiver rodando dentro do container acesse o link:
+[Documentação Swagger](http://localhost:8080/swagger-ui/index.html)

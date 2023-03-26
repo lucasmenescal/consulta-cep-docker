@@ -26,7 +26,7 @@ WORKDIR /workspace
 WORKDIR /workspace/consulta-endereco
 
 # Executa o projeto
-CMD ["mvn", "spring-boot:run"]
+# CMD ["mvn", "spring-boot:run"]
 
 
 

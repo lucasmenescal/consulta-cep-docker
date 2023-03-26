@@ -8,5 +8,5 @@
 3. Abra um terminal de comando dentro da pasta **consulta-cep-infra** e digite
 `docker-compose up -d`
 
-[Link da API]([https://](https://github.com/lucasmenescal/consulta-endereco))
+[Link da API]((https://github.com/lucasmenescal/consulta-endereco))
 
